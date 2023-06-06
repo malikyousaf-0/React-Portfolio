@@ -1,0 +1,13 @@
+.navbar-brand {
+  color: $primary-color;
+}
+.nav-link {
+  color: $primary-color;
+  font-size: larger;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 2rem;
+}
+.navbar {
+  z-index: 3;
+}
