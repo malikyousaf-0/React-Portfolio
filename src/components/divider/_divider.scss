@@ -1,0 +1,22 @@
+.dividerHeading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.dividerLine {
+  font-size: 1.2rem;
+  position: relative;
+  //   display: inline-block;
+  //   border-bottom: 2px solid $main-color;
+  //   border-width: 40%;
+  &::after {
+    text-align: center;
+    border-bottom: 5px solid $main-color;
+    content: "";
+    position: absolute;
+    width: 100px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

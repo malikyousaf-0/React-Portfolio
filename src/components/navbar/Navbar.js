@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [bg, setBg] = useState("none");
+  const [scroll, setScroll] = useState("");
+  const [margin, setMargin] = useState("pt-3");
+  const [menu, setMenue] = useState(false);
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 50) {
+      setScroll("scroll");
+      setMargin("mt-0");
+      setBg("light shadow");
+    } else {
+      setBg("none");
+      setScroll("unscroll");
+      setMargin("pt-3");
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-none ">
+      <nav className={`navbar navbar-expand-lg bg-${bg} fixed-top ${margin}`}>
         <div className="container">
-          <a className="navbar-brand" href="#">
-            Navbar
+          <a className="navbar-brand scroll" href="#">
+            MY Awan
           </a>
           <button
             className="navbar-toggler"
@@ -16,32 +34,50 @@ export default function Navbar() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => (menu === false ? setMenue(true) : setMenue(false))}
           >
-            <span className="navbar-toggler-icon"></span>
+            <i
+              className={`menu-button fas ${
+                menu ? "fa-times" : "fa-ellipsis-v"
+              }`}
+            ></i>
           </button>
           <div
             className="collapse navbar-collapse justify-content-center"
             id="navbarSupportedContent"
           >
-            {/* me-auto mb-2 mb-lg-0 */}
             <ul className="navbar-nav ">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a
+                  className={`nav-link ${scroll}`}
+                  aria-current="page"
+                  href="#"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className={`nav-link ${scroll}`} href="#about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className={`nav-link ${scroll}`} href="#services">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className={`nav-link ${scroll}`} href="#portfolio">
+                  Portfolio
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className={`nav-link ${scroll}`} href="#">
                   Contact
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className={`nav-link ${scroll}`} href="#">
                   Instagram
                 </a>
               </li>

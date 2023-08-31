@@ -1,0 +1,30 @@
+.about {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.w3-round {
+  width: 25%;
+}
+.aboutHeading {
+  font-size: 4rem;
+  border-bottom: 4px solid $main-color;
+  display: inline-block;
+}
+.aboutPara {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 700px) {
+  .aboutHeading {
+    font-size: 2rem;
+  }
+  .aboutPara {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutHeading {
+    font-size: 1.5rem;
+  }
+  .aboutPara {
+    font-size: 1rem;
+  }
+}

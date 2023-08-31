@@ -1,0 +1,11 @@
+.btn-primary {
+  background-color: $main-color;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 4px solid transparent;
+  transition: all 0.3s ease-out;
+  &:hover {
+    border: 4px solid $primary-color;
+    background-color: $main-color;
+  }
+}

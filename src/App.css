@@ -1,0 +1,232 @@
+.about {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.w3-round {
+  width: 25%;
+}
+
+.aboutHeading {
+  font-size: 4rem;
+  border-bottom: 4px solid #0eb5a3;
+  display: inline-block;
+}
+
+.aboutPara {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutHeading {
+    font-size: 2rem;
+  }
+  .aboutPara {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutHeading {
+    font-size: 1.5rem;
+  }
+  .aboutPara {
+    font-size: 1rem;
+  }
+}
+.hero {
+  background-image: url(../../asset/headerimg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.blur {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(28, 30, 30);
+  opacity: 0.7;
+  z-index: 1;
+  position: relative;
+}
+
+.mainContent {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 1;
+  color: white;
+  z-index: 2;
+}
+.mainContent .mainHeading {
+  font-size: 5rem;
+}
+.mainContent .mainLine {
+  font-size: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .mainContent .mainHeading {
+    font-size: 3rem;
+  }
+  .mainContent .mainLine {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainContent .mainHeading {
+    font-size: 2rem;
+  }
+  .mainContent .mainLine {
+    font-size: 1rem;
+  }
+}
+
+.banner {
+  background-image: url(../../asset/banner.jpg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 580px) {
+  .banner {
+    height: 130vh;
+  }
+}
+
+.bannerblur {
+  height: 70vh;
+  width: 100%;
+  background-color: #0eb5a3;
+  opacity: 0.6;
+  z-index: 1;
+  position: relative;
+}
+@media screen and (max-width: 580px) {
+  .bannerblur {
+    height: 130vh;
+  }
+}
+
+.fas,
+.far {
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+  border: 8px solid rgb(210, 202, 202);
+  border-radius: 50%;
+  line-height: 5.3rem;
+}
+
+.amount {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.counter-box {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #0eb5a3;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 4px solid transparent;
+  transition: all 0.3s ease-out;
+}
+.btn-primary:hover {
+  border: 4px solid white;
+  background-color: #0eb5a3;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 2rem;
+}
+.nav-link:hover {
+  border-bottom: 2px solid;
+  color: #0eb5a3;
+}
+.nav-link:focus {
+  color: #0eb5a3;
+}
+
+.navbar {
+  z-index: 3;
+  transition: all 0.4s ease-in;
+}
+
+.scroll {
+  color: #0eb5a3 !important;
+}
+.scroll:focus {
+  color: black;
+}
+
+.unscroll {
+  color: white;
+}
+
+.dividerHeading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dividerLine {
+  font-size: 1.2rem;
+  position: relative;
+}
+.dividerLine::after {
+  text-align: center;
+  border-bottom: 5px solid #0eb5a3;
+  content: "";
+  position: absolute;
+  width: 100px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card1 {
+  height: 22rem;
+  text-align: center;
+}
+.card1 .fab {
+  width: 8rem;
+  height: 8rem;
+  font-size: 6rem;
+  border: 8px solid #0eb5a3;
+  border-radius: 50%;
+  line-height: 8.1rem;
+}
+.card1:hover .fab {
+  color: white;
+  background-color: #0eb5a3;
+  border-color: rgba(207, 233, 230, 0.4784313725);
+}
+
+.card {
+  overflow: hidden;
+}
+.card:hover img {
+  transform: scale(1.3);
+  transition: transform 1s;
+}
+.card:hover .card-body {
+  background-color: white;
+  z-index: 2;
+}/*# sourceMappingURL=App.css.map */

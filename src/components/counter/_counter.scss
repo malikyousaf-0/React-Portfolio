@@ -1,0 +1,32 @@
+.counter {
+  .fas,
+  .far {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    border: 8px solid $main-color;
+    border-radius: 50%;
+    line-height: 5.3rem;
+    &:hover {
+      background-color: $main-color;
+      border-color: rgb(216, 197, 197);
+    }
+  }
+  .amount {
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+  .counter-box {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+.counter-part {
+  &:hover {
+    color: $main-color;
+    .fas,
+    .far {
+      color: $primary-color;
+    }
+  }
+}

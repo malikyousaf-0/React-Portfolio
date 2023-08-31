@@ -1,7 +1,17 @@
 @import "./scss/variables";
 
 // from contents
+@import "./content/about/about";
 @import "./content/hero/hero";
+@import "./content/cards/cards";
+@import "./content/banner/banner";
+@import "./content/Pcards/pcard.scss";
+@import "./content/contact/contact";
 // from components
+@import "./components/buttons/btn";
 @import "./components/navbar/navbar";
-
+@import "./components/divider/divider";
+@import "./components/card/card";
+@import "./components/portfoliocard/pcard";
+@import "./components/counter/counter";
+@import "./components/testimonial/testimonial";

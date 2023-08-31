@@ -6,12 +6,43 @@
   background-position: center;
   background-size: cover;
   position: absolute;
+  background-attachment: fixed;
 }
 .blur {
   height: 100vh;
   width: 100%;
   background-color: rgb(28, 30, 30);
-  opacity: 0.4;
-  z-index: 2;
+  opacity: 0.7;
+  z-index: 1;
   position: relative;
+}
+.mainContent {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 1;
+  color: $primary-color;
+  z-index: 2;
+  .mainHeading {
+    font-size: 5rem;
+  }
+  .mainLine {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 700px) {
+    .mainHeading {
+      font-size: 3rem;
+    }
+    .mainLine {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .mainHeading {
+      font-size: 2rem;
+    }
+    .mainLine {
+      font-size: 1rem;
+    }
+  }
 }

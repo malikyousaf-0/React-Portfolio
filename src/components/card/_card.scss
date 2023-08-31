@@ -1,0 +1,19 @@
+.card1 {
+  height: 22rem;
+  text-align: center;
+  .fab {
+    width: 8rem;
+    height: 8rem;
+    font-size: 6rem;
+    border: 8px solid $main-color;
+    border-radius: 50%;
+    line-height: 8.1rem;
+  }
+  &:hover {
+    .fab {
+      color: $primary-color;
+      background-color: $main-color;
+      border-color: #cfe9e67a;
+    }
+  }
+}
